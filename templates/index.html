@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Device login</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #10141a;
+      color: #e8eef5;
+    }
+    main {
+      width: min(28rem, calc(100% - 2rem));
+      text-align: center;
+    }
+    h1 {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #8b98a8;
+    }
+    a {
+      display: block;
+      margin-top: 1rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid #2f6fed;
+      border-radius: 14px;
+      background: #172033;
+      color: #9ec1ff;
+      font-size: 1.7rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    a:hover {
+      background: #1d2b48;
+    }
+    p {
+      color: #9aa6b4;
+      line-height: 1.45;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Open device</h1>
+    <a href="/connect" target="_blank" rel="noopener">{{ ip }}</a>
+    <p>Click the address to sign in and open the device in a new window.</p>
+  </main>
+</body>
+</html>
